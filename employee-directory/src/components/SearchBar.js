@@ -6,7 +6,7 @@ function SearchBar(props){
             <input 
             type="text" 
             onChange={props.handleInputChange}
-            value={props.search}
+            value={props.searchResult}
             placeholder="Search for an employee"
             ></input>
         </div>
