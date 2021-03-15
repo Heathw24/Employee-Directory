@@ -26,6 +26,15 @@ class App extends Component {
     )
   }
 
+  
+  handleSearchChange = event => {
+    //added toLowerCase to handle any case entry
+    const newFilteredEmployees = this.state.employees.filter(employee => employee.name.first.toLowerCase().includes(event.target.value.toLowerCase()) || employee.name.last.toLowerCase().includes(event.target.value.toLowerCase()));    
+    this.setState({ filteredEmployees: newFilteredEmployees });
+  };
+  
+
+
 
   render() {
 
@@ -37,10 +46,10 @@ class App extends Component {
       </header>
       <div>
         <SearchBar 
-        handleInputChange={(event) => this.setState({ searchResult: event.target.value.toLowerCase() })}
+        handleInputChange={this.handleSearchChange}
         // search = "fill in props " handleChange = "Fill in props"
         ></SearchBar>
-        <Profiles employees={this.state.employees} searchResult={this.state.searchResult}></Profiles>
+        <Profiles employees={ this.state.filteredEmployees.length === 0 ? this.state.employees : this.state.filteredEmployees} searchResult={this.handleSearchChange}></Profiles>
       </div>
     </div>
   
