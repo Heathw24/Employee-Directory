@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background: #2a2a2b;
+  background: #041831;
 }
 
 .App-logo {
@@ -47,4 +47,15 @@
   color: #fff;
   margin: 00px 15px 15px 15px;
   padding: 12px;
+}
+
+.searchBox {
+  background-color: #343a40;
+  margin: 0px 15px 5px 15px;
+  padding: 5px;
+
+}
+
+.searchbar {
+  padding: 10px;
 }
