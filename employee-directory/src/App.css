@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background: #2a2a2b;
 }
 
 .App-logo {
@@ -35,4 +36,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.tablebox {
+  margin: 15px;
+}
+
+.headerbox {
+  background-color: #3e444a;
+  color: #fff;
+  margin: 00px 15px 15px 15px;
+  padding: 12px;
 }
