@@ -18,4 +18,4 @@ Tools Used:
 5. HTML
 6. CSS
 
-![Employee-Directory](link)
+![Employee-Directory](employee-directory/public/Employee-directoryScreenshot.png)
